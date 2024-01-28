@@ -1,0 +1,211 @@
+body {
+    font-family: "Comic Sans", sans-serif;
+    background-color: #787878;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.top-box {
+    position:absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 30%;
+    background-color: #787878;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #666666, -10px -10px 20px #8a8a8a;
+    text-align: center;
+    height: auto;
+    font-size: 1.2em;
+
+}
+
+.leftbar {
+    position: absolute;
+    top:50%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    background-color: #787878;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset 9px 9px 18px #5d5d5d, -9px -9px 18px #8a8a8a;
+    text-align: center;
+    font-size: 1em;
+}
+
+.rightbar {
+    position: absolute;
+    top:50%;
+    right:25%;
+    transform: translate(50%, -50%);
+    width: 20%;
+    background-color: #787878;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset 9px 9px 18px #5d5d5d, -9px -9px 18px #8a8a8a;
+    text-align: center;
+    font-size: 1em;
+}
+
+.container {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 17.67%;
+    background-color: #787878;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #666666, -10px -10px 20px #8a8a8a;
+    max-height: 45%;
+    height: auto;
+}
+
+.title-box {
+    background-color: #787878;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #666666, -5px -5px 10px #8a8a8a;
+    font-size: 1em;
+}
+
+.toggle-box {
+    background-color: #787878;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px #666666, -5px -5px 10px #8a8a8a;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Add your other styles for switch, slider, chatbox, message-container, message-input, etc. here */
+
+
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #707070;
+    border-radius: 34px;
+    transition: .4s;
+    box-shadow: inset 3px 3px 6px #5d5d5d, inset -3px -3px 6px #8a8a8a;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #424242;
+    box-shadow: inset 3px 3px 6px #383838, inset -3px -3px 6px #4c4c4c;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #707070; /* Change to gray */
+}
+
+
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.chatbox {
+    background-color: #787878;
+    border-radius: 15px;
+    padding: 10px;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 20px #666666, -10px -10px 20px #8a8a8a;
+    max-height: 90px;
+}
+
+.message-container {
+    margin-bottom: 10px;
+}
+
+.message-input {
+    width: calc(100% - 22px);
+    border: none;
+    background-color: #787878;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    box-shadow: inset 3px 3px 6px #5d5d5d, inset -3px -3px 6px #8a8a8a;
+}
+
+.MusicPlayer {
+    position: absolute;
+    bottom: -165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125%;
+    background-color: #787878;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #666666, -10px -10px 20px #8a8a8a;
+    text-align: center;
+
+}
+.entercode {
+    width: calc(100% - 80px);
+    border: none;
+    background-color: #787878;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    box-shadow: inset 3px 3px 6px #5d5d5d, inset -3px -3px 6px #8a8a8a;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1em;
+}
+.MusicPlayer .entercode::placeholder {
+    color: #000; /* Change the color to your desired color */
+    font-family: "Comic Sans MS", cursive;
+    font-style: italic;
+    font-size: 1em;
+}
+/* CSS */
+.message-input::placeholder {
+    color: #000; /* Change the color to your desired color */
+    font-family: "Comic Sans MS", cursive;
+    font-style: italic;
+    font-size: 1em;
+}
+h3 {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1em;
+}
+.message {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1em;
+}
