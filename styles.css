@@ -156,6 +156,7 @@ input:checked + .slider:before {
     padding: 10px;
     outline: none;
     box-shadow: inset 3px 3px 6px #5d5d5d, inset -3px -3px 6px #8a8a8a;
+    font-family: "Comic Sans MS", cursive;
 }
 /* CSS */
 .message-input::placeholder {
