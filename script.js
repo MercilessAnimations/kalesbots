@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (toggleSwitch.checked) {
                     // Business mode
                     const businessResponses = [
-                        "Diversify your portfolio to minimize risk.",
-                        "Keep an eye on market trends and invest wisely.",
-                        "Consider long-term investments for steady growth.",
-                        "Remember, the key to success is continuous learning and adaptation.",
-                        "Efficiency is doing things right; effectiveness is doing the right things.",
-                        "Always prioritize customer satisfaction for long-term success.",
-                        "Network strategically to open doors for new opportunities.",
-                        "Don't be afraid to take calculated risks in pursuit of growth.",
-                        "The highest form of wealth is the ability to wake up every morning and say 'I can do whatever I want to do.' This means that the ultimate goal of earning money is the freedom of your own time."
+                        "Business Bot: Diversify your portfolio to minimize risk.",
+                        "Business Bot: Keep an eye on market trends and invest wisely.",
+                        "Business Bot: Consider long-term investments for steady growth.",
+                        "Business Bot: Remember, the key to success is continuous learning and adaptation.",
+                        "Business Bot: Efficiency is doing things right; effectiveness is doing the right things.",
+                        "Business Bot: Always prioritize customer satisfaction for long-term success.",
+                        "Business Bot: Network strategically to open doors for new opportunities.",
+                        "Business Bot: Don't be afraid to take calculated risks in pursuit of growth.",
+                        "Business Bot: The highest form of wealth is the ability to wake up every morning and say 'I can do whatever I want to do.' This means that the ultimate goal of earning money is the freedom of your own time."
                     ];
 
                     // Filter out used responses
@@ -40,14 +40,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else {
                     // Rizzful mode
                     const pickupLines = [
-                        "Are you a magician? Because whenever I look at you, everyone else disappears.",
-                        "Do you have a name, or can I call you mine?",
-                        "Do you believe in love at first sight, or should I walk by again?",
-                        "Is it hot in here, or is it just you?",
-                        "I must be a snowflake because I've fallen for you.",
-                        "Can I follow you home? Cause my parents always told me to follow my dreams.",
-                        "Are you a bank loan? Because you've got my interest.",
-                        "I ought to complain to Spotify for you not being named this week’s hottest single."
+                        "Rizz Bot: Are you a magician? Because whenever I look at you, everyone else disappears.",
+                        "Rizz Bot: Do you have a name, or can I call you mine?",
+                        "Rizz Bot: Do you believe in love at first sight, or should I walk by again?",
+                        "Rizz Bot: Is it hot in here, or is it just you?",
+                        "Rizz Bot: I must be a snowflake because I've fallen for you.",
+                        "Rizz Bot: Can I follow you home? Cause my parents always told me to follow my dreams.",
+                        "Rizz Bot: Are you a bank loan? Because you've got my interest.",
+                        "Rizz Bot: I ought to complain to Spotify for you not being named this week’s hottest single."
                     ];
 
                     // Filter out used responses
