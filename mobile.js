@@ -1,5 +1,3 @@
-// mobile.js
-
 document.addEventListener("DOMContentLoaded", function() {
     // Function to check if the device is a mobile device
     function isMobileDevice() {
@@ -21,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
         landscapeMessage.style.top = "50%";
         landscapeMessage.style.left = "50%";
         landscapeMessage.style.transform = "translate(-50%, -50%)";
+        landscapeMessage.style.fontFamily = "cursive"; // Set font to cursive
+        landscapeMessage.style.fontSize = "1em"; //set the font to 1em
+        landscapeMessage.style.filter = "blur(5px)"; // Apply blur effect to background
+        landscapeMessage.classList.add("landscape-message"); // Add class for removal
         document.body.appendChild(landscapeMessage);
     }
 
