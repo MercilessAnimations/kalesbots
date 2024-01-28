@@ -10,9 +10,9 @@ body {
 
 .top-box {
     position:absolute;
-    top: 25%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
     width: 400px;
     background-color: #787878;
     border-radius: 20px;
