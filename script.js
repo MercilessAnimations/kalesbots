@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         "Business Bot: Efficiency is doing things right; effectiveness is doing the right things.",
                         "Business Bot: Always prioritize customer satisfaction for long-term success.",
                         "Business Bot: Network strategically to open doors for new opportunities.",
-                        "Business Bot: Don't be afraid to take calculated risks in pursuit of growth."
+                        "Business Bot: Don't be afraid to take calculated risks in pursuit of growth.",
+                        "Business Bot: The highest form of wealth is the ability to wake up every morning and say 'I can do whatever I want to do.' This means that the ultimate goal of earning money is the freedom of your own time."
                     ];
                     response = businessResponses[Math.floor(Math.random() * businessResponses.length)];
                 } else {
@@ -30,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         "Rizzful Bot: Is it hot in here, or is it just you?",
                         "Rizzful Bot: I must be a snowflake because I've fallen for you.",
                         "Rizzful Bot: Can I follow you home? Cause my parents always told me to follow my dreams.",
-                        "Rizzful Bot: Are you a bank loan? Because you've gyatt my interest."
-
+                        "Rizzful Bot: Are you a bank loan? Because you've got my interest.",
+                        "Rizzful Bot: I ought to complain to Spotify for you not being named this week’s hottest single."
                     ];
                     response = pickupLines[Math.floor(Math.random() * pickupLines.length)];
                 }
@@ -43,16 +44,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    let konamiCode = "";
-    const konamiSequence = "38384040373937396665";
-    document.addEventListener("keydown", function(event) {
-        konamiCode += event.keyCode;
-        if (konamiCode === konamiSequence) {
-            document.body.style.backgroundImage = "url('jackharlow.png')";
-            document.body.style.backgroundSize = "cover";
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundAttachment = "fixed";
-            konamiCode = "";
-        }
-    });
 });
