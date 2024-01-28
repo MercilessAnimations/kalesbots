@@ -13,12 +13,14 @@ body {
     top: 5%;
     left: 50%;
     transform: translate(-50%, -30%);
-    width: 400px;
+    width: 30%;
     background-color: #787878;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 10px 10px 20px #666666, -10px -10px 20px #8a8a8a;
     text-align: center;
+    height: auto;
+    font-size: 1.2em;
 
 }
 
@@ -27,12 +29,13 @@ body {
     top:50%;
     left:25%;
     transform: translate(-50%, -50%);
-    width: 200px;
+    width: 15%;
     background-color: #787878;
     border-radius: 20px;
     padding: 20px;
     box-shadow: inset 9px 9px 18px #5d5d5d, -9px -9px 18px #8a8a8a;
     text-align: center;
+    font-size: 1em;
 }
 
 .rightbar {
@@ -40,12 +43,13 @@ body {
     top:50%;
     right:25%;
     transform: translate(50%, -50%);
-    width: 200px;
+    width: 20%;
     background-color: #787878;
     border-radius: 20px;
     padding: 20px;
     box-shadow: inset 9px 9px 18px #5d5d5d, -9px -9px 18px #8a8a8a;
     text-align: center;
+    font-size: 1em;
 }
 
 .container {
@@ -53,12 +57,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
+    width: 17.67%;
     background-color: #787878;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 10px 10px 20px #666666, -10px -10px 20px #8a8a8a;
-
+    max-height: 45%;
+    height: auto;
 }
 
 .title-box {
@@ -68,6 +73,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     box-shadow: 5px 5px 10px #666666, -5px -5px 10px #8a8a8a;
+    font-size: 1em;
 }
 
 .toggle-box {
@@ -140,8 +146,8 @@ input:checked + .slider:before {
     border-radius: 15px;
     padding: 10px;
     overflow-y: scroll;
-    max-height: 200px;
     box-shadow: 10px 10px 20px #666666, -10px -10px 20px #8a8a8a;
+    max-height: 90px;
 }
 
 .message-container {
@@ -156,17 +162,50 @@ input:checked + .slider:before {
     padding: 10px;
     outline: none;
     box-shadow: inset 3px 3px 6px #5d5d5d, inset -3px -3px 6px #8a8a8a;
+}
+
+.MusicPlayer {
+    position: absolute;
+    bottom: -165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125%;
+    background-color: #787878;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #666666, -10px -10px 20px #8a8a8a;
+    text-align: center;
+
+}
+.entercode {
+    width: calc(100% - 80px);
+    border: none;
+    background-color: #787878;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    box-shadow: inset 3px 3px 6px #5d5d5d, inset -3px -3px 6px #8a8a8a;
     font-family: "Comic Sans MS", cursive;
+    font-size: 1em;
+}
+.MusicPlayer .entercode::placeholder {
+    color: #000; /* Change the color to your desired color */
+    font-family: "Comic Sans MS", cursive;
+    font-style: italic;
+    font-size: 1em;
 }
 /* CSS */
 .message-input::placeholder {
     color: #000; /* Change the color to your desired color */
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Comic Sans MS", cursive;
     font-style: italic;
+    font-size: 1em;
 }
 h3 {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1em;
 }
 .message {
     font-family: "Comic Sans MS", cursive;
+    font-size: 1em;
 }
