@@ -73,6 +73,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    entercodeInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            const inputValue = entercodeInput.value.trim().toLowerCase();
+            if (inputValue === 'kathy') {
+                playKathy();
+            }
+        }
+    });
+
     function playAhmed() {
         const audio = new Audio("Lovin On Me.mp3");
         audio.play();
@@ -103,6 +112,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     function playNikhil() {
         const audio = new Audio("Rickroll.mp3");
+        audio.play();
+    }
+    function playKathy() {
+        const audio = new Audio("Harry Potter.mp3");
         audio.play();
     }
 });
