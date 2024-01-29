@@ -64,10 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    function playAhmed() {
-        const audio = new Audio("Lovin On Me.mp3");
-        audio.play();
-    }
     function playMithra() {
         const audio = new Audio("Minuet.mp3");
         audio.play();
@@ -90,6 +86,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     function playAnish() {
         const audio = new Audio("Experience.mp3");
+        audio.play();
+    }
+        function playAhmed() {
+        const audio = new Audio("Lovin On Me.mp3");
         audio.play();
     }
 });
