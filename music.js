@@ -64,6 +64,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    entercodeInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            const inputValue = entercodeInput.value.trim().toLowerCase();
+            if (inputValue === 'nikhil') {
+                playNikhil();
+            }
+        }
+    });
+
+    function playAhmed() {
+        const audio = new Audio("Lovin On Me.mp3");
+        audio.play();
+    }
     function playMithra() {
         const audio = new Audio("Minuet.mp3");
         audio.play();
@@ -88,8 +101,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const audio = new Audio("Experience.mp3");
         audio.play();
     }
-        function playAhmed() {
-        const audio = new Audio("Lovin On Me.mp3");
+    function playNikhil() {
+        const audio = new Audio("Rickroll.mp3");
         audio.play();
     }
 });
