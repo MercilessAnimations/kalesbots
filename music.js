@@ -82,6 +82,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    entercodeInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            const inputValue = entercodeInput.value.trim().toLowerCase();
+            if (inputValue === 'shreya') {
+                playShreya();
+            }
+        }
+    });
+
     function playAhmed() {
         const audio = new Audio("Lovin On Me.mp3");
         audio.play();
@@ -91,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
         audio.play();
     }
     function playPranaya() {
-        const audio = new Audio("Yes or Yes.mp3");
+        const audio = new Audio("Happy Birthday.mp3");
         audio.play();
     }
     function playSujay() {
@@ -116,6 +125,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     function playKathy() {
         const audio = new Audio("Harry Potter.mp3");
+        audio.play();
+    }
+    function playShreya() {
+        const audio = new Audio("Furret Walk.mp3");
         audio.play();
     }
 });
